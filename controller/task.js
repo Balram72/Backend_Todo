@@ -50,7 +50,7 @@ export const updateTask = async (req,res,next)=>{
     
         res.status(200).json({
             success: true,
-            message:"Task Updated"
+            message:"Task Update"
         })
     } catch (error) {
         next(error);
@@ -73,6 +73,6 @@ export const deleteTask = async (req,res,next)=>{
             message:"Task Deleted"
         })
     } catch (error) {
-        next(error);
+     next(error);
     }
 }
